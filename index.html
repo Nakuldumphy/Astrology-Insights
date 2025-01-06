@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Astrology Insights</h1>
+    </header>
+
+    <div class="container">
+        <form id="astrologyForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" placeholder="Enter your surname" required>
+
+            <label for="date">Date:</label>
+            <input type="number" id="date" placeholder="Enter your birth date (1-31)" min="1" max="31" required>
+
+            <label for="month">Month:</label>
+            <input type="number" id="month" placeholder="Enter your birth month (1-12)" min="1" max="12" required>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" placeholder="Enter your birth year" min="1900" max="2025" required>
+
+            <button type="submit">Get Astrology Insight</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Astrology Insights. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./first.js"></script>
+</body>
+</html>
+
